@@ -1,0 +1,8 @@
+﻿@model IEnumerable<BSUTCloud.Models.MSVisioFile>
+
+<ul class="materialList">
+    @foreach (var item in Model.OrderBy(i => i.Name))
+    {
+        <li><a target="_blank" href="@item.Link">@item.Name</a></li>
+    }
+</ul>

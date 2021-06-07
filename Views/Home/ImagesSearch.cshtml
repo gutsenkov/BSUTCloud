@@ -1,0 +1,10 @@
+﻿﻿@model IEnumerable<BSUTCloud.Models.Image>
+<div class="gallery">
+    <div>
+        @foreach (var item in Model.OrderBy(i => i.Name))
+        {
+            <a href="@item.Link" data-lightbox="mygallery"><img src="@item.Link" alt="@item.Name" /></a>
+        }
+    </div>
+</div>
+

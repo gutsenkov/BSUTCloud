@@ -1,0 +1,216 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Cuprum', sans-serif;
+}
+
+html {
+    min-width: 320px;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 320px;
+    max-width: 2024px;
+    margin: 0 auto;
+    background-image: url(railroad-865118.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.header {
+    display: grid;
+    padding: 1em;
+    grid-template-columns: 1fr 3fr 1fr;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.title h1 {
+    text-align: center;
+}
+
+.logo__img {
+    width: 200px;
+}
+
+.logo, .title, .icons {
+    margin: auto auto;
+}
+
+.icons a img:hover {
+        background-color: #fff;
+    }
+
+.icon {
+    width: 30px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+}
+
+.menu .tree, .materials .start__page, .advertising div {
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    padding: 1.4em 1.5em 1.4em 1.5em;
+}
+
+.materials img {
+    margin-top: 0.5em;
+    width: 150px;
+    margin-bottom: 1.5em;
+}
+
+.description {
+    text-align: center;
+}
+
+.menu__element {
+    font-weight: bold;
+    margin: 0.5em 0 0.5em 0;
+    cursor: pointer;
+}
+
+    .menu__element:hover {
+        color: #808080;
+    }
+
+    .menu__element a:hover {
+        color: #808080;
+    }
+
+    .menu__element ul {
+        margin-top: 0.5em;
+    }
+
+.subject {
+    font-weight: normal;
+    margin-left: 1em;
+    overflow: hidden;
+}
+
+.menu__element > li {
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery > div{
+    text-align:center;
+    margin:0 auto;
+}
+.gallery img{
+    padding:15px;
+}
+
+.gallery img:hover{
+    filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+.imgTypes {
+    hiden:false;
+}
+
+@media screen and (max-device-width: 480px) {
+    .logo__img {
+        width: 70px;
+    }
+
+    .title h1 {
+        font-size: 18px;
+    }
+
+    .icon {
+        width: 12px;
+    }
+
+    .menu__element {
+        font-size: 8px;
+    }
+
+    .start__page h2 {
+        font-size: 8px;
+    }
+    .materialList li{
+        font-size: 8px;
+    }
+
+    .content {
+        padding: 0.5em;
+    }
+
+    .menu .tree, .materials .start__page, .advertising div {
+        border-radius: 15px;
+        padding: 0.5em;
+    }
+
+    .materials img {
+        margin-top: 0.5em;
+        width: 40px;
+        margin-bottom: 0.5em;
+    }
+    .subject {
+        margin-left: 0.5em;
+    }
+}
+
+@media screen and (min-device-width: 481px) and (max-device-width: 800px) {
+    .header {
+        padding: 0.5em;
+    }
+    .logo__img {
+        width: 120px;
+    }
+
+    .title h1 {
+        font-size: 25px;
+    }
+
+    .icon {
+        width: 17px;
+    }
+
+    .menu__element {
+        font-size: 12px;
+    }
+
+    .start__page h2 {
+        font-size: 12px;
+    }
+    .materialList li{
+        font-size: 12px;
+    }
+    .content {
+        padding: 0.5em;
+    }
+
+    .menu .tree, .materials .start__page, .advertising div {
+        border-radius: 15px;
+        padding: 0.8em;
+    }
+
+    .materials img {
+        margin-top: 0.5em;
+        width: 40px;
+        margin-bottom: 0.5em;
+    }
+    .subject {
+        margin-left: 0.5em;
+    }
+}
